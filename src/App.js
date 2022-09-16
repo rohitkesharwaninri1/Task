@@ -15,7 +15,7 @@ export default function App() {
   const [seachValue, setSeachValue] = useState("");
   const [isEven, setIsEven] = useState(false);
   const click = async () => {
-    const url = `https://newsapi.org/v2/top-headlines?country=${country}&apiKey=a38fda923e944d5e88f6507d8235c286&page=${page}&pageSize=10`;
+    const url = `https://newsapi.org/v2/top-headlines?country=${country}&apiKey=b6d09c2c0f3442ddbc089fc17df125ae&page=${page}&pageSize=10`;
     await axios.get(url).then((response) => {
       setContacts(response.data.articles);
       setFilterContacts(response.data.articles);
